@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: #2B3856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-style{
+    position: relative;
+    padding: 20px 35px;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.btn-1{
+    position: relative;
+    margin: 20px 0px;
+}
+
+.btn-1 > .child{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transition: 0.5s;
+    background: red;
+}
+
+.child-1{
+    left: 0;
+    top: 0;
+    /* background:lightcoral ; */
+}
+
+.child-2{
+    left: 0;
+    bottom: 0;
+    /* background:lightgoldenrodyellow ; */
+}
+
+.child-3{
+    right: 0;
+    top: 0;
+    /* background:green ; */
+}
+
+.child-4{
+    right: 0;
+    bottom: 0;
+    /* background:yellow ; */
+}
+
+.btn-1:hover > .child{
+    width: 0;
+    height: 0;
+}
+
+.btn-2{
+    position: relative;
+    margin: 20px 0px;
+}
+.btn-2 > .child{
+    position: absolute;
+    height: 0;
+    width: 0;
+    background: red;
+    transition: 0.5s;
+}
+
+.btn-2:hover > .child{
+    height: 50%;
+    width: 50%;
+}
